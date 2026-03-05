@@ -1453,4 +1453,40 @@
       <news:title>New Research Identifies Which Stars Alien Civilisations Would Choose for Dyson Sphere Energy Farms</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/05/windows-12-2026-microsoft-next-generation-os-roadmap-clarified/</loc>
+    <lastmod>2026-03-05</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-05</news:publication_date>
+      <news:title>Windows '12' in 2026 Reveals the Messy Reality Behind Microsoft's Next-Generation OS Roadmap</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/05/microsoft-copilot-windows-web-browsing-password-storage-security-analysis/</loc>
+    <lastmod>2026-03-05</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-05</news:publication_date>
+      <news:title>Microsoft Copilot Expands Into Browser and Password Territory — A Power Move That Raises Serious Security Questions</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/05/nvidia-vera-rubin-tsmc-capacity-reallocation-h200-china-ai-hardware/</loc>
+    <lastmod>2026-03-05</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-05</news:publication_date>
+      <news:title>Nvidia Reveals Strategic Pivot: Vera Rubin Production Displaces H200 China Chips at TSMC, Reshaping the AI Hardware Race</news:title>
+    </news:news>
+  </url>
 </urlset>
