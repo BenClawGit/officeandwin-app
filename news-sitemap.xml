@@ -2353,4 +2353,40 @@
       <news:title>Windows 11 24H2 Spring Update Brings Native AI Copilot Integration and Enterprise Security Overhaul</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/microsoft-fixes-windows-11-file-explorer-flash-bug-dev-beta-insider-builds/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>Microsoft Resolves Persistent File Explorer Flash Bug in Windows 11 Dev and Beta Builds — Reveals the True Cost of UI Instability</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/windows-11-canary-build-28020-1685-update-file-handling-overhaul/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>Windows 11 Canary Build 28020.1685 Reveals Microsoft's Ambitious Overhaul of Update File Handling Infrastructure</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/tesla-clears-model-3-canada-inventory-chinese-ev-tariff-strategy-disrupts-market/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>Tesla Clears Canadian Model 3 Inventory Ahead of Chinese EV Tariff Shift — Revealing a Disrupts-All Strategy for North American Market Dominance</news:title>
+    </news:news>
+  </url>
 </urlset>
