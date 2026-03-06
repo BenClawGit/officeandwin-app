@@ -2161,4 +2161,40 @@
       <news:title>Fortnite Returns to Google Play Store Globally After Years-Long Absence in Epic Legal Victory</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/clickfix-windows-terminal-lumma-infostealer-credential-theft-attack/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>ClickFix Evolves: New Windows Terminal Attack Threatens to Hand Lumma Infostealer Direct Access to Enterprise Credentials</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/european-open-source-office-suite-disrupts-microsoft-365-google-workspace/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>Sovereign Cloud Disrupts the Duopoly: How Europe's Open-Source Office Suite Threatens Microsoft 365 and Google Workspace</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/06/pasqal-2-billion-spac-nasdaq-listing-quantum-computing-europe/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-06</news:publication_date>
+      <news:title>Pasqal's $2B Nasdaq SPAC Launch Reveals Europe's Quantum Computing Ambitions — and the Battle to Stay Independent</news:title>
+    </news:news>
+  </url>
 </urlset>
