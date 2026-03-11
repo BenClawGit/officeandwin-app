@@ -4933,4 +4933,52 @@
       <news:title>Amazon Launches Healthcare AI Assistant Across Website and Mobile App</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/11/microsoft-windows-11-stability-update-2024-enterprise-analysis/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Microsoft Reveals Renewed Stability Push for Windows 11: What the Latest Cumulative Update Delivers and Why the Road Ahead Remains Long</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/11/microsoft-teams-emoji-uncanny-valley-ux-crisis-enterprise-collaboration/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Microsoft Teams' Emoji Redesign Reveals a Deeper UX Crisis Threatening Enterprise Collaboration Adoption</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/11/apple-launches-seven-new-products-2025-ai-hardware-enterprise-impact/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Apple Launches Seven New Products Simultaneously — A Hardware Blitz That Transforms Its 2025 Lineup and Challenges the Enterprise Status Quo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/03/11/apple-developer-certificate-server-outage-threatens-ios-macos-development-infrastructure/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Apple Developer Certificate Outage Reveals Critical Infrastructure Fragility Threatening Millions of iOS and macOS Developers</news:title>
+    </news:news>
+  </url>
 </urlset>
