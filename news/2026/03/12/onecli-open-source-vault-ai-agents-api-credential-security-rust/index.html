@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security | OfficeandWin Tech</title>
+<meta name="description" content="OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security. Analysis, impact, and w">
+<link rel="canonical" href="https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/">
+<meta property="og:title" content="OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security">
+<meta property="og:description" content="OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security. Analysis, impact, and w">
+<meta property="og:url" content="https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OfficeandWin Tech">
+<meta property="article:published_time" content="2026-03-12">
+<meta property="article:section" content="AI Ecosystem">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security">
+<meta name="twitter:description" content="OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security. Analysis, impact, and w">
+<link rel="alternate" hreflang="en-us" href="https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/">
+<link rel="alternate" hreflang="en-gb" href="https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/">
+<link rel="alternate" hreflang="en-au" href="https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/">
+<script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials \u2014 And It Could Redefine Enterprise Security",
+    "datePublished": "2026-03-12",
+    "dateModified": "2026-03-12",
+    "author": {
+      "@type": "Organization",
+      "name": "OfficeandWin Tech Desk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OfficeandWin Tech",
+      "url": "https://officeandwin.store"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://officeandwin.store/news/2026/03/12/onecli-open-source-vault-ai-agents-api-credential-security-rust/"
+    },
+    "articleSection": "AI Ecosystem",
+    "keywords": "AI Ecosystem, AI, AR"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What exactly does OneCLI do and how does its proxy model work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OneCLI sits as an HTTP proxy between your AI agents and the external services they call. You register your real API credentials \u2014 Stripe keys, OpenAI tokens, GitHub PATs, and so on \u2014 in OneCLI's local encrypted vault. You then issue lightweight placeholder tokens to your agents. When an agent makes an outbound HTTP request through the proxy, OneCLI intercepts the call, replaces the placeholder with the real credential, and forwards the authenticated request to the target service. The agent process itself never holds or sees the genuine secret at any point, eliminating an entire class of credential theft scenarios including prompt injection exfiltration attacks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why isn't Azure Key Vault or AWS Secrets Manager sufficient for AI agent credential security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cloud-native secrets managers are vaults, not proxies. When an agent retrieves a secret from Azure Key Vault or AWS Secrets Manager, the secret is returned to the agent runtime process, which then holds it in memory for the duration of its API calls. That in-memory exposure window is exactly where prompt injection attacks and memory-scraping techniques can exfiltrate credentials. OneCLI's proxy model means the agent never receives the actual secret \u2014 the substitution happens at the network layer, outside the agent process. It's a fundamentally different security boundary than vault-retrieve-and-use patterns, and one that existing cloud secrets services don't currently offer for general HTTP workloads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is OneCLI production-ready and what should enterprises evaluate before deploying it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As a newly announced open-source project, OneCLI should be treated as promising early-stage infrastructure rather than certified enterprise software. Before production deployment, organisations should evaluate: the maturity and completeness of its cryptographic implementation; whether an independent security audit has been conducted or is planned; its support for secrets rotation and audit logging; performance characteristics under high-throughput agent workloads; and Windows/Linux/macOS compatibility for their specific deployment environments. The Rust implementation is a positive indicator for memory safety and performance, but open-source security tooling benefits enormously from community review and third-party audits before handling production credentials at scale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does OneCLI relate to the Model Context Protocol (MCP) and emerging AI agent standards?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Model Context Protocol, open-sourced by Anthropic in November 2024 and now adopted across the major AI labs including OpenAI and Google DeepMind, is establishing a standard interface for how AI agents communicate with external tools and data sources. MCP defines how tools are described and invoked but does not yet prescribe a comprehensive credential security model for the HTTP calls agents make through those tools. OneCLI operates at the transport layer beneath MCP \u2014 it would proxy the HTTP calls that MCP tool implementations make to external services. As MCP matures, its authentication specifications may evolve to incorporate proxy-based credential injection natively, which could either complement OneCLI's approach or reduce the need for standalone tooling depending on how the standard develops."
+        }
+      }
+    ]
+  }
+]</script>
+<style>
+:root { --navy: #0f1e45; --blue: #0078d4; --light-blue: #e8f0fe; --text: #1a1a2e; --muted: #6c757d; --border: #dee2e6; --star: #f5a623; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.8; font-size: 17px; background: #fafbfc; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { background: var(--navy); padding: 14px 24px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; }
+.site-logo { color: white; font-size: 1.3rem; font-weight: 700; }
+.site-logo span { color: #4fc3f7; }
+.header-nav a { color: #c8d6f0; font-size: 0.85rem; margin-left: 16px; }
+.header-nav a:hover { color: white; text-decoration: none; }
+.article-hero { background: linear-gradient(135deg, var(--navy), #1a3a6e); color: white; padding: 56px 24px 48px; text-align: center; }
+.article-hero .category-badge { display: inline-block; background: rgba(79,195,247,0.15); border: 1px solid rgba(79,195,247,0.4); color: #4fc3f7; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 50px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+.article-hero h1 { font-size: clamp(1.5rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 860px; margin: 0 auto 16px; }
+.article-meta { font-size: 0.85rem; color: #a0b4cc; }
+.article-meta time { font-weight: 600; }
+.container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+article { padding: 48px 0; }
+article h2 { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 40px 0 16px; padding-top: 8px; border-top: 2px solid var(--light-blue); }
+article h2:first-of-type { border-top: none; margin-top: 0; }
+article p { margin: 0 0 18px; }
+article ul, article ol { margin: 0 0 18px 24px; }
+article li { margin-bottom: 10px; }
+article blockquote { border-left: 4px solid var(--blue); padding: 16px 20px; margin: 24px 0; background: var(--light-blue); border-radius: 0 8px 8px 0; font-style: italic; color: #333; }
+.quick-summary { background: var(--light-blue); border: 1px solid #c8d6f0; border-radius: 10px; padding: 24px; margin: 24px 0; }
+.quick-summary h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+.quick-summary ul { margin: 0 0 0 20px; }
+.quick-summary li { font-size: 0.95rem; margin-bottom: 6px; }
+.faq-section details { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; background: white; }
+.faq-section summary { padding: 14px 18px; cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; font-size: 0.95rem; }
+.faq-section summary::after { content: "+"; float: right; font-size: 1.2rem; color: var(--blue); }
+.faq-section details[open] summary::after { content: "−"; }
+.faq-section .faq-answer { padding: 0 18px 14px; font-size: 0.93rem; color: #444; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; padding: 24px; background: #f0f4ff; border-radius: 12px; border: 1px solid #d0d8ee; }
+.product-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; transition: box-shadow 0.2s, transform 0.2s; }
+.product-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.product-card .pimg { width: 100%; height: 140px; object-fit: contain; margin-bottom: 12px; border-radius: 6px; }
+.product-card .pname { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.product-card .pdesc { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
+.product-card .pprice { font-size: 1.3rem; font-weight: 800; color: var(--blue); margin-bottom: 10px; }
+.product-card .pbtn { display: inline-block; background: var(--blue); color: white; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 6px; width: 100%; }
+.product-card .pbtn:hover { background: #006cbf; text-decoration: none; }
+.product-grid-label { text-align: center; font-size: 0.8rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.author-box { display: flex; align-items: center; gap: 16px; background: var(--light-blue); border-radius: 10px; padding: 20px; margin: 40px 0; }
+.author-avatar { width: 48px; height: 48px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+.author-info .author-name { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+.author-info .author-bio { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.tag { background: #e8edf5; color: var(--navy); font-size: 0.78rem; font-weight: 600; padding: 4px 12px; border-radius: 50px; }
+.related-articles { margin: 40px 0; }
+.related-articles h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+.related-list a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.95rem; }
+.related-list a:hover { color: var(--blue); }
+footer { background: var(--navy); color: #a0b4cc; padding: 40px 24px; text-align: center; font-size: 0.85rem; margin-top: 40px; }
+footer a { color: #7ab3d4; margin: 0 10px; }
+@media (max-width: 640px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 16px; }
+  .article-hero h1 { font-size: 1.4rem; }
+  .author-box { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://officeandwin.store" class="site-logo">Office<span>and</span>Win <small style="font-size:0.65rem;color:#7ab3d4;">TECH</small></a>
+  <nav class="header-nav">
+    <a href="https://officeandwin.store/news/">News</a>
+    <a href="https://officeandwin.com">Store</a>
+    <a href="https://officeandwin.com/collections/all">Products</a>
+    <a href="mailto:support@officeandwin.com">Support</a>
+  </nav>
+</header>
+
+<div class="article-hero">
+  <div class="container">
+    <div class="category-badge">AI Ecosystem</div>
+    <h1>OneCLI Launches Open-Source Vault That Transforms How AI Agents Handle API Credentials — And It Could Redefine Enterprise Security</h1>
+    <div class="article-meta">
+      By <strong>OfficeandWin Tech Desk</strong> · <time datetime="2026-03-12">2026-03-12</time>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+    <div class="quick-summary"><h3>⚡ Quick Summary</h3><ul>
+<li>OneCLI is a new open-source tool built in Rust that acts as an encrypted credential vault and HTTP proxy, preventing AI agents from ever directly accessing real API keys.</li><li>The project targets a critical and growing security gap: autonomous AI agents are routinely given raw credentials to call external APIs, creating significant exposure risk at scale.</li><li>GitHub's Secret Scanning detects millions of exposed credentials annually, and with AI agent adoption accelerating rapidly in 2024–2025, the attack surface has expanded dramatically.</li><li>Existing enterprise secrets tools like HashiCorp Vault and AWS Secrets Manager were not designed for agentic AI workloads and don't provide the HTTP proxy pattern OneCLI offers.</li><li>The tool's architecture aligns with emerging standards like Anthropic's Model Context Protocol and could become a foundational security layer as regulatory scrutiny of AI systems intensifies.</li></ul></div>
+
+    
+    <h2>What Happened</h2>
+<p>A new open-source project called <strong>OneCLI</strong> has emerged from the Hacker News community, and it addresses one of the most quietly urgent security problems in modern software development: AI agents being handed raw API credentials with effectively no guardrails. Built in <strong>Rust</strong> — the memory-safe systems programming language increasingly favoured for security-critical infrastructure — OneCLI acts as an encrypted credential vault and HTTP proxy layer that sits between autonomous AI agents and the external services they interact with.</p>
+<p>The core mechanic is elegantly simple but architecturally significant. Developers store their actual API keys — think OpenAI tokens, Stripe keys, GitHub Personal Access Tokens, AWS IAM credentials, or any HTTP-based service secret — inside OneCLI's encrypted local vault. AI agents are then issued lightweight placeholder tokens. When an agent initiates an outbound HTTP request through the OneCLI proxy, the gateway intercepts that call, strips the placeholder credential, injects the real secret, and forwards the authenticated request to the target service. The agent itself never touches the genuine credential at any point in the transaction.</p>
+<div class="product-grid-label">💻 Genuine Microsoft Software — Up to 90% Off Retail</div>
+<div class="product-grid">
+<a href="https://officeandwin.com/products/microsoft-office-2024-professional-plus-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Microsoft_Office_2024_Pro_Plus_3_devices.jpg?v=1767676269" alt="Office 2024 Pro Plus product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Office 2024 Pro Plus</div>
+  <div class="pdesc">Word, Excel, PowerPoint + more. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-windows-11-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/windows-11__67943.png?v=1767407745" alt="Windows 11 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Windows 11 Pro</div>
+  <div class="pdesc">Professional Edition. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-office-365-professional-plus-5-device-lifetime-account-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/office365-5devices.jpg?v=1767675269" alt="Office 365 Lifetime product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Office 365 Lifetime</div>
+  <div class="pdesc">5 Devices. Lifetime Account.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-visio-2024-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Visio-2024-Professional.webp?v=1767676668" alt="Visio 2024 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Visio 2024 Pro</div>
+  <div class="pdesc">Professional Diagramming. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-project-2024-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Project-2024-Professional.jpg?v=1767677072" alt="Project 2024 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Project 2024 Pro</div>
+  <div class="pdesc">Project Management. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/win-11-pro-office-2024-proplus-visio-2024-pro-project-2024-pro" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Microsoft.png?v=1740347325" alt="Win 11 + Office Bundle product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Win 11 + Office Bundle</div>
+  <div class="pdesc">Win 11 Pro + Office + Visio + Project</div>
+  <div class="pprice">$49.99</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+</div>
+
+
+<p>The project was announced via a "Show HN" post on Hacker News, the community forum operated by Y Combinator that has historically served as a first-discovery platform for developer tools that go on to achieve significant adoption — HashiCorp Vault, Caddy, and countless other infrastructure projects made early waves there. The OneCLI team explicitly framed the problem in terms that will resonate with anyone who has spent time in enterprise AI deployments: "We built OneCLI because AI agents are being given raw API keys. And it's going about as well as you'd expect."</p>
+<p>The project is released as open-source software, with the source code available for inspection, contribution, and self-hosted deployment. The choice of Rust as the implementation language is notable — it signals a serious commitment to performance and memory safety from the outset, characteristics that matter enormously in a proxy handling authentication tokens at scale.</p>
+
+<h2>Background and Context</h2>
+<p>To understand why OneCLI arrives at precisely this moment, you need to trace two converging trajectories: the explosive growth of agentic AI systems and the slow-motion disaster of secrets management in modern software development.</p>
+<p>The secrets management problem is not new. GitHub has operated an automated <strong>Secret Scanning</strong> feature since 2018, and the statistics it produces are sobering. In its 2024 transparency reporting, GitHub disclosed that its automated systems detected and flagged millions of exposed credentials annually across public repositories. Research from the security firm GitGuardian has consistently found that roughly <strong>one in ten active developers</strong> inadvertently exposes a secret in their commit history at some point. Hardcoded credentials remain one of the OWASP Top Ten vulnerability categories year after year.</p>
+<p>Existing solutions like <strong>HashiCorp Vault</strong> (first released in 2015), <strong>AWS Secrets Manager</strong> (launched 2018), <strong>Azure Key Vault</strong> (available since 2015), and <strong>Google Cloud Secret Manager</strong> (GA in 2020) have addressed this for human-operated infrastructure. But they were designed around a paradigm where a human developer or a well-defined CI/CD pipeline is the consumer of secrets. The authentication flows, audit logging, and access control models all assume relatively predictable, policy-bound actors.</p>
+<p>Agentic AI systems broke that assumption entirely. Beginning in earnest with the release of <strong>AutoGPT</strong> in March 2023 — which became one of the fastest GitHub repositories to reach 100,000 stars in history — developers began building autonomous agents that could chain together dozens of tool calls across multiple external APIs without human intervention between steps. Shortly after, frameworks like <strong>LangChain</strong>, <strong>CrewAI</strong>, <strong>Microsoft AutoGen</strong> (released October 2023), and <strong>OpenAI's Assistants API with function calling</strong> (November 2023) gave this pattern enterprise legitimacy.</p>
+<p>The problem: getting a LangChain agent to call the Stripe API means the agent runtime needs the Stripe API key. Getting it to commit code means it needs a GitHub token. The path of least resistance — and the path most tutorials and quickstart guides implicitly encourage — is to dump those keys directly into environment variables or configuration files accessible to the agent process. This is the credential hygiene equivalent of leaving your house key under the doormat and writing the address on it.</p>
+<p>By 2024 and into 2025, with <strong>OpenAI's GPT-4o</strong>, <strong>Anthropic's Claude 3.5 Sonnet</strong>, and <strong>Google's Gemini 1.5 Pro</strong> all demonstrating multi-step agentic capability, the volume of production AI agents handling sensitive credentials reached a scale where the risk moved from theoretical to actively exploited. OneCLI is a direct product of that inflection point.</p>
+
+<h2>Why This Matters</h2>
+<p>OneCLI's arrival matters not primarily because of what the tool does today, but because of what its existence signals about where enterprise AI security is heading — and how unprepared most organisations currently are.</p>
+<p>Consider the blast radius of a compromised AI agent credential. A human developer whose laptop is breached might expose the secrets stored locally. An AI agent operating at scale might be making hundreds of API calls per minute across a dozen services simultaneously. If a prompt injection attack — a vector OWASP formally added to its LLM Top Ten in 2023 — successfully exfiltrates the agent's credential store, the attacker doesn't just get one key. They potentially get every key the agent has ever needed. The attack surface scales with agent capability.</p>
+<p>For IT security professionals, the architectural pattern OneCLI proposes — credential proxying with placeholder tokens — is conceptually aligned with how <strong>service mesh</strong> technologies like Istio handle mTLS between microservices, or how <strong>PAM (Privileged Access Management)</strong> solutions like CyberArk handle just-in-time credential injection for human users. The innovation OneCLI brings is making this pattern accessible to individual developers and small teams without requiring enterprise PAM infrastructure.</p>
+<p>The Microsoft ecosystem specifically has a horse in this race. <strong>Microsoft Copilot Studio</strong>, available since November 2023 and now deeply integrated with Microsoft 365 and Power Platform, allows enterprise users to build custom AI agents that connect to external services via connectors and APIs. <strong>Azure AI Agent Service</strong>, announced at Microsoft Ignite 2024 and entering broader availability in early 2025, provides the infrastructure layer for running autonomous agents at scale. Neither product solves the fundamental credential exposure problem for custom integrations — organisations building agents that reach outside the Microsoft connector ecosystem must manage their own secrets, and most do so naively.</p>
+<p>For businesses running Microsoft 365 environments and deploying Copilot-adjacent agents, understanding how to layer proper secrets management is now a governance requirement, not an optional best practice. Organisations investing in <a href="https://officeandwin.com">enterprise productivity software</a> and building AI automation on top of it need to treat credential security for agent workloads with the same rigour they'd apply to any privileged access scenario.</p>
+<p>There's also a compliance dimension. GDPR, SOC 2, ISO 27001, and the emerging EU AI Act all create frameworks under which uncontrolled credential exposure by AI systems could constitute a reportable security incident. The regulatory clock is ticking.</p>
+
+<h2>Industry Impact and Competitive Landscape</h2>
+<p>OneCLI enters a market that is simultaneously underdeveloped and about to become extremely crowded. The competitive landscape breaks into three tiers.</p>
+<p><strong>Enterprise PAM vendors</strong> — CyberArk, BeyondTrust, and Delinea — have the deepest credential management capabilities but price points and deployment complexity that make them inaccessible for individual developers or early-stage AI projects. CyberArk's Conjur, for instance, is powerful but carries implementation overhead measured in weeks, not hours. These vendors are beginning to eye the AI agent market; CyberArk's 2024 roadmap explicitly referenced machine identity for AI workloads, but concrete agentic-specific products remain nascent.</p>
+<p><strong>Cloud-native secrets services</strong> — AWS Secrets Manager, Azure Key Vault, and Google Cloud Secret Manager — provide robust managed vaults but require that your agent workloads run within their respective cloud ecosystems and that developers wire up SDK integrations manually. They're not proxies; they're vaults. The agent still receives the secret and holds it in memory, which means the exposure window exists even if the storage is managed. HashiCorp Vault, now under IBM's ownership following the $6.4 billion acquisition completed in December 2023, has begun exploring agent-specific patterns but hasn't shipped a purpose-built solution.</p>
+<p><strong>Emerging developer-focused tools</strong> represent OneCLI's most direct competitive tier. <strong>Doppler</strong>, which raised a $20 million Series A in 2021, offers secrets synchronisation across environments but again stops short of the proxy pattern. <strong>Infisical</strong>, an open-source HashiCorp Vault alternative that has gained significant traction since 2022, is closer in spirit but isn't specifically architected for AI agent workloads. <strong>1Password's Secrets Automation</strong> product serves developers but focuses on developer machines, not agent runtimes.</p>
+<p>The proxy-based approach OneCLI takes most closely resembles what some teams have built internally using <strong>Envoy</strong> or <strong>NGINX</strong> with custom credential injection middleware — but those are bespoke solutions requiring significant engineering investment. OneCLI's value proposition is packaging that pattern into an opinionated, purpose-built tool with a lightweight operational footprint, enabled by Rust's near-zero overhead.</p>
+<p>For Microsoft specifically, OneCLI's open-source model represents both a complement and a quiet challenge. Azure Key Vault is a core Azure revenue component. If the developer community coalesces around a local-first, open-source proxy approach that reduces dependency on managed cloud secrets services, it could slow adoption of Microsoft's premium secrets management tiers, particularly among developers who are already cost-sensitive and building on non-Azure infrastructure. Organisations looking to reduce overall software costs — whether that means sourcing an <a href="https://officeandwin.com/products/microsoft-office-2024-professional-plus-3-devices-product-key-instant-delivery">affordable Microsoft Office licence</a> or evaluating open-source alternatives to cloud services — will pay attention to tools like OneCLI.</p>
+
+<h2>Expert Perspective</h2>
+<p>From a security architecture standpoint, the OneCLI approach represents a pragmatic acknowledgment of developer reality. The conventional wisdom in enterprise security — that developers should integrate with enterprise-grade PAM systems and follow rigorous secrets rotation policies — has demonstrably failed to prevent credential exposure at the scale the industry now faces. The problem isn't that developers don't know better; it's that the friction of doing it right remains too high relative to the friction of shipping features.</p>
+<p>OneCLI's design philosophy mirrors what the broader security industry calls "shifting left" — embedding security controls into the development workflow rather than bolting them on after deployment. By making the secure path (placeholder tokens through a proxy) as simple as the insecure path (direct credential injection), it aims to collapse that friction differential.</p>
+<p>The Rust implementation deserves specific attention from a risk standpoint. Memory unsafety in credential-handling software is not a theoretical concern — the class of vulnerabilities that buffer overflows and use-after-free bugs enable in C or C++ code have been the root cause of major credential theft incidents historically. Building the proxy layer in Rust provides meaningful structural guarantees that a Python or Node.js implementation would not.</p>
+<p>The open-source model cuts both ways. Transparency in security tooling is generally positive — the codebase can be audited, and the community can identify vulnerabilities quickly. But it also means the project's security guarantees are only as strong as its maintenance cadence and the rigour of its cryptographic implementation choices. Organisations considering production deployment should treat an independent security audit as a prerequisite, not an afterthought.</p>
+<p>Looking forward, the most interesting strategic question is whether OneCLI's proxy pattern becomes a community standard that larger players absorb — through acquisition, open-source contribution, or simply by shipping competing features — or whether it evolves into a standalone product with enterprise-grade audit logging, RBAC, and SaaS deployment options.</p>
+
+<h2>What This Means for Businesses</h2>
+<p>For business decision-makers and IT leadership, the immediate action isn't necessarily to deploy OneCLI tomorrow — it's to audit your current AI agent deployments and honestly answer the question: where are your secrets right now?</p>
+<p>If your engineering teams are building on LangChain, AutoGen, CrewAI, or any similar framework, the default assumption should be that API credentials are being handled less securely than your security policy requires. That's not a criticism of your developers; it reflects the current state of tooling and documentation across the ecosystem.</p>
+<p>For organisations already invested in Azure infrastructure, the path of least resistance remains Azure Key Vault integration, particularly for agents running on Azure Container Apps or Azure Kubernetes Service. For teams building outside Azure, or for developer environments and local testing where full cloud PAM is overkill, OneCLI offers a compelling lightweight alternative worth evaluating. Businesses that have standardised on Windows environments and are deploying agent workflows on <a href="https://officeandwin.com/products/microsoft-windows-11-professional-3-devices-product-key-instant-delivery">genuine Windows 11</a> developer machines should test OneCLI's Windows compatibility and local vault performance as a priority.</p>
+<p>The broader message for businesses is structural: AI agent security is not a problem you can defer. As regulatory scrutiny of AI systems intensifies and as agents are given access to increasingly sensitive business systems — ERP connectors, CRM APIs, financial data feeds — the credential exposure surface becomes a board-level risk, not just a developer concern. Tools like OneCLI represent the beginning of a mature security ecosystem for agentic AI, and organisations that build good credential hygiene habits now will be significantly better positioned when compliance requirements inevitably catch up.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+  <li><strong>OneCLI is a Rust-built, open-source HTTP proxy and encrypted vault</strong> that prevents AI agents from ever directly handling real API credentials, replacing them with placeholder tokens that are swapped at the proxy layer.</li>
+  <li><strong>The problem it solves is widespread and growing</strong> — with millions of credentials exposed annually on platforms like GitHub and AI agent adoption accelerating rapidly, insecure credential handling for agent workloads is one of 2025's most underappreciated enterprise security risks.</li>
+  <li><strong>Existing solutions don't fully address the agentic AI use case</strong> — enterprise PAM tools are too heavy, cloud secrets managers don't proxy, and developer-focused tools like Doppler and Infisical weren't designed for autonomous agent runtimes.</li>
+  <li><strong>Rust as the implementation language is a deliberate security signal</strong>, providing memory safety guarantees that are particularly valuable in software handling authentication secrets.</li>
+  <li><strong>Microsoft's AI agent ecosystem</strong> — Copilot Studio, Azure AI Agent Service, AutoGen — doesn't natively solve this problem for custom integrations, creating a gap that third-party tools like OneCLI can fill.</li>
+  <li><strong>The open-source model accelerates adoption but requires diligence</strong> — production deployments should await or commission independent security audits of the cryptographic and proxy implementation.</li>
+  <li><strong>Businesses should treat this as a forcing function</strong> for auditing current AI agent credential practices before regulatory frameworks make that audit mandatory rather than voluntary.</li>
+</ul>
+
+<h2>Looking Ahead</h2>
+<p>The trajectory for OneCLI and the broader credential-security-for-AI-agents space will be shaped by several converging forces over the next 12 to 18 months.</p>
+<p>On the standards front, the <strong>Model Context Protocol (MCP)</strong>, open-sourced by Anthropic in November 2024 and rapidly adopted by OpenAI, Google DeepMind, and Microsoft, is establishing itself as the standard interface layer between AI agents and external tools. How MCP's authentication model evolves — and whether it incorporates credential proxying natively — will directly affect how much standalone tooling like OneCLI is needed at the application layer versus handled at the protocol layer.</p>
+<p>Regulatory developments in the EU AI Act's enforcement timeline (with high-risk AI systems facing compliance deadlines in 2025 and 2026) will create compliance pressure that could dramatically accelerate enterprise adoption of formalised agent credential management. NIST's ongoing AI Risk Management Framework updates are similarly likely to address agentic credential exposure explicitly.</p>
+<p>Watch for HashiCorp/IBM, CyberArk, and potentially Microsoft Azure to announce agent-specific credential management features in 2025 — the market signal from projects like OneCLI will not go unnoticed by their product teams. Whether OneCLI itself pursues a commercial layer, accepts venture backing, or remains a pure open-source project will define whether it becomes infrastructure or inspiration for the products that follow it.</p>
+    
+    <div class="faq-section"><h2>Frequently Asked Questions</h2>
+<details><summary>What exactly does OneCLI do and how does its proxy model work?</summary><div class="faq-answer"><p>OneCLI sits as an HTTP proxy between your AI agents and the external services they call. You register your real API credentials — Stripe keys, OpenAI tokens, GitHub PATs, and so on — in OneCLI's local encrypted vault. You then issue lightweight placeholder tokens to your agents. When an agent makes an outbound HTTP request through the proxy, OneCLI intercepts the call, replaces the placeholder with the real credential, and forwards the authenticated request to the target service. The agent process itself never holds or sees the genuine secret at any point, eliminating an entire class of credential theft scenarios including prompt injection exfiltration attacks.</p></div></details>
+<details><summary>Why isn't Azure Key Vault or AWS Secrets Manager sufficient for AI agent credential security?</summary><div class="faq-answer"><p>Cloud-native secrets managers are vaults, not proxies. When an agent retrieves a secret from Azure Key Vault or AWS Secrets Manager, the secret is returned to the agent runtime process, which then holds it in memory for the duration of its API calls. That in-memory exposure window is exactly where prompt injection attacks and memory-scraping techniques can exfiltrate credentials. OneCLI's proxy model means the agent never receives the actual secret — the substitution happens at the network layer, outside the agent process. It's a fundamentally different security boundary than vault-retrieve-and-use patterns, and one that existing cloud secrets services don't currently offer for general HTTP workloads.</p></div></details>
+<details><summary>Is OneCLI production-ready and what should enterprises evaluate before deploying it?</summary><div class="faq-answer"><p>As a newly announced open-source project, OneCLI should be treated as promising early-stage infrastructure rather than certified enterprise software. Before production deployment, organisations should evaluate: the maturity and completeness of its cryptographic implementation; whether an independent security audit has been conducted or is planned; its support for secrets rotation and audit logging; performance characteristics under high-throughput agent workloads; and Windows/Linux/macOS compatibility for their specific deployment environments. The Rust implementation is a positive indicator for memory safety and performance, but open-source security tooling benefits enormously from community review and third-party audits before handling production credentials at scale.</p></div></details>
+<details><summary>How does OneCLI relate to the Model Context Protocol (MCP) and emerging AI agent standards?</summary><div class="faq-answer"><p>The Model Context Protocol, open-sourced by Anthropic in November 2024 and now adopted across the major AI labs including OpenAI and Google DeepMind, is establishing a standard interface for how AI agents communicate with external tools and data sources. MCP defines how tools are described and invoked but does not yet prescribe a comprehensive credential security model for the HTTP calls agents make through those tools. OneCLI operates at the transport layer beneath MCP — it would proxy the HTTP calls that MCP tool implementations make to external services. As MCP matures, its authentication specifications may evolve to incorporate proxy-based credential injection natively, which could either complement OneCLI's approach or reduce the need for standalone tooling depending on how the standard develops.</p></div></details>
+</div>
+
+    
+    <div class="tags"><span class="tag">AI Ecosystem</span><span class="tag">AI</span><span class="tag">AR</span></div>
+    
+    <div class="author-box">
+      <div class="author-avatar">OW</div>
+      <div class="author-info">
+        <div class="author-name">OfficeandWin Tech Desk</div>
+        <div class="author-bio">Covering enterprise software, AI, cybersecurity, and productivity technology. Independent analysis for IT professionals and technology enthusiasts.</div>
+      </div>
+    </div>
+    
+    <div class="related-articles"><h3>📰 Related Articles</h3><div class="related-list">
+<a href="https://officeandwin.store/news/2026/03/12/stanford-gut-brain-research-reverse-memory-loss-cognitive-decline/">Stanford Researchers Discover Gut-Brain Communication Pathway That Could Reverse Memory Loss</a>
+<a href="https://officeandwin.store/news/2026/03/12/atms-didnt-kill-bank-teller-jobs-iphone-did/">Why ATMs Never Killed Bank Teller Jobs but the iPhone Finally Did</a>
+<a href="https://officeandwin.store/news/2026/03/12/trump-jake-paul-endorsement-reveals-social-media-political-influence-tech-ecosystem/">Trump's Jake Paul 'Endorsement' Reveals How Social Media Disrupts Political and Tech Ecosystem Narratives</a>
+<a href="https://officeandwin.store/news/2026/03/12/rox-ai-1-2-billion-valuation-disrupts-crm-market-ai-native-sales-platform/">Rox AI's $1.2B Valuation Disrupts the CRM Market as Enterprises Demand AI-Native Sales Intelligence</a>
+<a href="https://officeandwin.store/news/2026/03/12/perplexity-enterprise-ai-agent-platform-cloud-expansion-2025/">Perplexity Launches Enterprise AI Agent Platform, Transforming How Businesses Delegate Work to Intelligent Software</a>
+</div></div>
+
+  </article>
+</div>
+
+<footer>
+  <p><a href="https://officeandwin.store/news/">Tech News</a> | <a href="https://officeandwin.com">OfficeandWin Store</a> | <a href="mailto:support@officeandwin.com">Contact</a></p>
+  <p style="margin-top:12px;font-size:0.75rem;color:#5a6d85;">&copy; 2026 OfficeandWin Tech. All rights reserved.</p>
+</footer>
+</body>
+</html>
