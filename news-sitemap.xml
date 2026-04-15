@@ -17425,4 +17425,40 @@
       <news:title>Microsoft 365 Copilot Gets Custom Agents Builder for Business Users</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/15/microsoft-windows-app-free-for-everyone-no-subscription-required/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15</news:publication_date>
+      <news:title>Microsoft Makes Windows App Free for Everyone — No Subscription Required</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/15/microsoft-open-sources-typechat-ai-project-for-structured-language-models/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15</news:publication_date>
+      <news:title>Microsoft Open-Sources TypeChat AI Project for Structured Language Models</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/15/microsoft-launches-ai-powered-security-agents-for-enterprise-threat-defense/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15</news:publication_date>
+      <news:title>Microsoft Launches AI-Powered Security Agents for Enterprise Threat Defense</news:title>
+    </news:news>
+  </url>
 </urlset>
