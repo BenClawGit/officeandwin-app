@@ -17281,4 +17281,16 @@
       <news:title>US Export Control Agency Lost Nearly a Fifth of Its Licensing Staff Amid AI Chip Boom</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/15/microsoft-patches-critical-zero-day-all-windows/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-15</news:publication_date>
+      <news:title>Microsoft Patches Critical Zero-Day Vulnerability Affecting All Windows Versions</news:title>
+    </news:news>
+  </url>
 </urlset>
