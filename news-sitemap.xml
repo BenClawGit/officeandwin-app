@@ -17497,4 +17497,28 @@
       <news:title>Verizon Call Filter API Vulnerability Could Have Exposed Millions of Call Records</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/25/microsoft-tests-openai-o3-model-copilot-ai-assistant/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25</news:publication_date>
+      <news:title>Microsoft Tests OpenAI o3 Reasoning Model for Copilot AI Assistant</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/25/windows-server-2025-hotpatching-restored-kb5055523/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25</news:publication_date>
+      <news:title>Microsoft Confirms Windows Server 2025 Hotpatching Restored After Two-Week Outage</news:title>
+    </news:news>
+  </url>
 </urlset>
