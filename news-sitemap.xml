@@ -17461,4 +17461,28 @@
       <news:title>Microsoft Launches AI-Powered Security Agents for Enterprise Threat Defense</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/25/microsoft-hotpatch-windows-11-enterprise-24h2-ga/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25</news:publication_date>
+      <news:title>Microsoft Launches Hotpatch Updates for Windows 11 Enterprise: Security Patches Without Reboots</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://officeandwin.store/news/2026/04/25/cloudflare-blocks-record-21-million-rps-ddos-attack/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>OfficeandWin Tech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-25</news:publication_date>
+      <news:title>Cloudflare Blocks Record-Breaking 21.3 Million Request-Per-Second DDoS Attack</news:title>
+    </news:news>
+  </url>
 </urlset>
