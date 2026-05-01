@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server | OfficeandWin Tech</title>
+<meta name="description" content="Microsoft patched a Windows bug that made new Remote Desktop security warnings render incorrectly on multi-monitor setups with mixed scaling.">
+<link rel="canonical" href="https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/">
+<meta property="og:title" content="Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server">
+<meta property="og:description" content="Microsoft patched a Windows bug that made new Remote Desktop security warnings render incorrectly on multi-monitor setups with mixed scaling.">
+<meta property="og:url" content="https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OfficeandWin Tech">
+<meta property="article:published_time" content="2026-05-01">
+<meta property="article:section" content="Microsoft Ecosystem">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server">
+<meta name="twitter:description" content="Microsoft patched a Windows bug that made new Remote Desktop security warnings render incorrectly on multi-monitor setups with mixed scaling.">
+<link rel="alternate" hreflang="en-us" href="https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/">
+<link rel="alternate" hreflang="en-gb" href="https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/">
+<link rel="alternate" hreflang="en-au" href="https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/">
+<script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-05-01",
+    "author": {
+      "@type": "Organization",
+      "name": "OfficeandWin Tech Desk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OfficeandWin Tech",
+      "url": "https://officeandwin.store"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/"
+    },
+    "articleSection": "Microsoft Ecosystem",
+    "keywords": "Microsoft Ecosystem, Windows, Remote Desktop, Cybersecurity, Windows Server"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://officeandwin.store"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "News",
+        "item": "https://officeandwin.store/news/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Microsoft Ecosystem",
+        "item": "https://officeandwin.store/news/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server",
+        "item": "https://officeandwin.store/news/2026/05/01/microsoft-fixes-remote-desktop-security-warning-display-bug/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which systems were affected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microsoft said the rendering issue hit supported Windows 10, Windows 11 and Windows Server devices, especially multi-monitor setups using different display scaling settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do the new RDP warnings matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They help users review publisher identity, destination details and local resource redirection before connecting, which is important because malicious RDP files are increasingly used in phishing campaigns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should businesses deploy the preview update?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most enterprises should test it promptly in staging because a broken warning dialog can reduce the practical value of the security feature, especially for help desks and remote administration teams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this change Remote Desktop defaults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The broader April security changes still leave risky shared resources disabled by default; this update mainly fixes how the warning dialog is displayed."
+        }
+      }
+    ]
+  }
+]</script>
+<style>
+:root { --navy: #0f1e45; --blue: #0078d4; --light-blue: #e8f0fe; --text: #1a1a2e; --muted: #6c757d; --border: #dee2e6; --star: #f5a623; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.8; font-size: 17px; background: #fafbfc; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { background: var(--navy); padding: 14px 24px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; }
+.site-logo { color: white; font-size: 1.3rem; font-weight: 700; }
+.site-logo span { color: #4fc3f7; }
+.header-nav a { color: #c8d6f0; font-size: 0.85rem; margin-left: 16px; }
+.header-nav a:hover { color: white; text-decoration: none; }
+.article-hero { background: linear-gradient(135deg, var(--navy), #1a3a6e); color: white; padding: 56px 24px 48px; text-align: center; }
+.article-hero .category-badge { display: inline-block; background: rgba(79,195,247,0.15); border: 1px solid rgba(79,195,247,0.4); color: #4fc3f7; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 50px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+.article-hero h1 { font-size: clamp(1.5rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 860px; margin: 0 auto 16px; }
+.article-meta { font-size: 0.85rem; color: #a0b4cc; }
+.article-meta time { font-weight: 600; }
+.container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+article { padding: 48px 0; }
+article h2 { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 40px 0 16px; padding-top: 8px; border-top: 2px solid var(--light-blue); }
+article h2:first-of-type { border-top: none; margin-top: 0; }
+article p { margin: 0 0 18px; }
+article ul, article ol { margin: 0 0 18px 24px; }
+article li { margin-bottom: 10px; }
+article blockquote { border-left: 4px solid var(--blue); padding: 16px 20px; margin: 24px 0; background: var(--light-blue); border-radius: 0 8px 8px 0; font-style: italic; color: #333; }
+.quick-summary { background: var(--light-blue); border: 1px solid #c8d6f0; border-radius: 10px; padding: 24px; margin: 24px 0; }
+.quick-summary h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+.quick-summary ul { margin: 0 0 0 20px; }
+.quick-summary li { font-size: 0.95rem; margin-bottom: 6px; }
+.faq-section details { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; background: white; }
+.faq-section summary { padding: 14px 18px; cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; font-size: 0.95rem; }
+.faq-section summary::after { content: "+"; float: right; font-size: 1.2rem; color: var(--blue); }
+.faq-section details[open] summary::after { content: "−"; }
+.faq-section .faq-answer { padding: 0 18px 14px; font-size: 0.93rem; color: #444; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; padding: 24px; background: #f0f4ff; border-radius: 12px; border: 1px solid #d0d8ee; }
+.product-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; transition: box-shadow 0.2s, transform 0.2s; }
+.product-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.product-card .pimg { width: 100%; height: 140px; object-fit: contain; margin-bottom: 12px; border-radius: 6px; }
+.product-card .pname { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.product-card .pdesc { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
+.product-card .pprice { font-size: 1.3rem; font-weight: 800; color: var(--blue); margin-bottom: 10px; }
+.product-card .pbtn { display: inline-block; background: var(--blue); color: white; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 6px; width: 100%; }
+.product-card .pbtn:hover { background: #006cbf; text-decoration: none; }
+.product-grid-label { text-align: center; font-size: 0.8rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.author-box { display: flex; align-items: center; gap: 16px; background: var(--light-blue); border-radius: 10px; padding: 20px; margin: 40px 0; }
+.author-avatar { width: 48px; height: 48px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+.author-info .author-name { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+.author-info .author-bio { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.tag { background: #e8edf5; color: var(--navy); font-size: 0.78rem; font-weight: 600; padding: 4px 12px; border-radius: 50px; }
+.related-articles { margin: 40px 0; }
+.related-articles h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+.related-list a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.95rem; }
+.related-list a:hover { color: var(--blue); }
+footer { background: var(--navy); color: #a0b4cc; padding: 40px 24px; text-align: center; font-size: 0.85rem; margin-top: 40px; }
+footer a { color: #7ab3d4; margin: 0 10px; }
+@media (max-width: 640px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 16px; }
+  .article-hero h1 { font-size: 1.4rem; }
+  .author-box { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://officeandwin.store" class="site-logo">Office<span>and</span>Win <small style="font-size:0.65rem;color:#7ab3d4;">TECH</small></a>
+  <nav class="header-nav">
+    <a href="https://officeandwin.store/news/">News</a>
+    <a href="https://officeandwin.com">Store</a>
+    <a href="https://officeandwin.com/collections/all">Products</a>
+    <a href="mailto:support@officeandwin.com">Support</a>
+  </nav>
+</header>
+
+<div class="article-hero">
+  <div class="container">
+    <div class="category-badge">Microsoft Ecosystem</div>
+    <h1>Microsoft Fixes Remote Desktop Security Warning Bug Across Windows and Server</h1>
+    <div class="article-meta">
+      By <strong>OfficeandWin Tech Desk</strong> · <time datetime="2026-05-01">2026-05-01</time>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+    <div class="quick-summary"><h3>⚡ Quick Summary</h3><ul>
+<li>Microsoft patched a Windows bug that made new Remote Desktop security warnings render incorrectly on multi-monitor setups with mixed scaling.</li><li>The issue affected supported Windows 10, Windows 11 and Windows Server releases after April 2026 security updates introduced stricter RDP warnings.</li><li>The fix restores visibility for prompts meant to help users inspect publisher identity and redirected resources before opening risky RDP files.</li><li>The episode shows how usability bugs can weaken otherwise sensible hardening features when security dialogs become hard to read or click.</li><li>IT teams should validate the preview fix quickly because RDP remains a high-value phishing vector in enterprise environments.</li></ul></div>
+
+    
+    <h2>What Happened</h2>
+<p>Microsoft has released a fix for a Windows issue that caused newly introduced Remote Desktop security warnings to display incorrectly on systems using multiple monitors with different scaling settings. The problem appeared after April 2026 cumulative updates added stronger checks around .rdp files, the connection files enterprises often use to preconfigure access to remote PCs and servers. On affected machines, buttons could be misaligned or partly hidden, while the warning text became difficult to read. That is a bigger problem than it sounds, because the entire purpose of the dialog is to slow users down before they open a potentially dangerous remote connection. The fix is included in the optional KB5083631 preview update for Windows 11 and is tied to the broader servicing work Microsoft is doing after April’s security releases.</p>
+<h2>Background and Context</h2>
+<p>Remote Desktop has been embedded in Windows administration workflows for decades, and that convenience is exactly why attackers like abusing it. Security researchers and Microsoft have repeatedly documented phishing campaigns that use weaponised RDP files to lure users into opening sessions that expose local drives, clipboards or credentials. In April, Microsoft responded by introducing one-time education prompts and more prominent connection warnings that highlight whether a file is signed and what resources it wants to redirect. That direction makes sense. Windows security history is full of examples showing that protective controls fail when the user experience is confusing. Account Control prompts, SmartScreen alerts and browser download warnings all became more effective only after Microsoft tuned their design and clarity.</p>
+<div class="product-grid-label">💻 Genuine Microsoft Software — Up to 90% Off Retail</div>
+<div class="product-grid">
+<a href="https://officeandwin.com/products/microsoft-office-2024-professional-plus-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Microsoft_Office_2024_Pro_Plus_3_devices.jpg?v=1767676269" alt="Office 2024 Pro Plus product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Office 2024 Pro Plus</div>
+  <div class="pdesc">Word, Excel, PowerPoint + more. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-windows-11-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/windows-11__67943.png?v=1767407745" alt="Windows 11 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Windows 11 Pro</div>
+  <div class="pdesc">Professional Edition. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-office-365-professional-plus-5-device-lifetime-account-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/office365-5devices.jpg?v=1767675269" alt="Office 365 Lifetime product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Office 365 Lifetime</div>
+  <div class="pdesc">5 Devices. Lifetime Account.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-visio-2024-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Visio-2024-Professional.webp?v=1767676668" alt="Visio 2024 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Visio 2024 Pro</div>
+  <div class="pdesc">Professional Diagramming. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/microsoft-project-2024-professional-3-devices-product-key-instant-delivery" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Project-2024-Professional.jpg?v=1767677072" alt="Project 2024 Pro product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Project 2024 Pro</div>
+  <div class="pdesc">Project Management. 3 Devices.</div>
+  <div class="pprice">$29</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+<a href="https://officeandwin.com/products/win-11-pro-office-2024-proplus-visio-2024-pro-project-2024-pro" class="product-card" style="text-decoration:none;color:inherit;">
+  <img src="https://cdn.shopify.com/s/files/1/0285/1815/4285/files/Microsoft.png?v=1740347325" alt="Win 11 + Office Bundle product key - genuine licence from OfficeandWin" class="pimg" loading="lazy">
+  <div class="pname">Win 11 + Office Bundle</div>
+  <div class="pdesc">Win 11 Pro + Office + Visio + Project</div>
+  <div class="pprice">$49.99</div>
+  <div class="pbtn">Buy Now →</div>
+</a>
+</div>
+
+
+<h2>Why This Matters</h2>
+<p>For businesses, the fix matters because security controls are only useful when employees can actually interact with them. A partially hidden warning on a high-DPI dual-monitor setup can push rushed staff to click blindly or abandon the prompt altogether and escalate to support. That creates noise for IT teams and weakens the value of a sensible hardening change. It also matters for organisations standardising on modern Windows desktops and remote work tools. If a company is refreshing fleets, pairing the update with tested remote access policies, a <a href="https://officeandwin.com/products/microsoft-windows-11-professional-3-devices-product-key-instant-delivery">genuine Windows 11 key</a> for compliant systems, and tighter control over signed RDP files is the practical move. The broader lesson is that user interface quality is part of security engineering, not a cosmetic extra.</p>
+<h2>Industry Impact and Competitive Landscape</h2>
+<p>Microsoft is under constant pressure to keep Windows enterprise management ahead of rivals that pitch simpler, cloud-first remote access stacks. Google pushes browser-centric administration through ChromeOS and Workspace, while third-party vendors such as TeamViewer, AnyDesk and BeyondTrust market tightly managed remote access with stronger visibility controls. Microsoft still owns the deepest installed base because Remote Desktop is built into the operating system and Windows Server estates remain everywhere. But embedded advantage cuts both ways: when a Windows security change misfires, it ripples across huge numbers of endpoints. That is why competitors will frame any RDP turbulence as evidence that older native protocols need more modern wrappers, stricter identity controls and better telemetry.</p>
+<h2>Expert Perspective</h2>
+<p>The interesting part of this story is not just the bug itself but what it reveals about Microsoft’s current security posture. The company is clearly trying to make dangerous defaults less dangerous by forcing more explicit disclosure before a connection opens. That aligns with its broader Secure Future Initiative style thinking: reduce silent trust, surface risk and disable unnecessary access paths. But the vendor also has to ship those protections across wildly diverse hardware, monitor scaling profiles and legacy management setups. In practice, enterprise security increasingly lives or dies on this kind of edge-case quality assurance. A dialog that fails on a mixed-DPI workstation is a reminder that the last mile of security is often a display layer issue, not a cryptography issue.</p>
+<h2>What This Means for Businesses</h2>
+<p>IT departments should test the fix on the specific device combinations most common in support desks, engineering teams and finance groups, where multi-monitor layouts are normal. They should also review whether unsigned RDP files are still circulating internally, because the new warnings work best when organisations already have disciplined remote access practices. Businesses modernising remote work stacks should use this moment to verify Windows patch baselines, resource redirection policies and admin workstation hygiene. If a broader desktop refresh is underway, legitimate sources for <a href="https://officeandwin.com">enterprise productivity software</a> and correctly licensed Windows builds can reduce procurement friction while keeping environments standardised.</p>
+<h2>Key Takeaways</h2>
+<ul><li>Microsoft fixed a rendering bug that weakened the usability of new RDP security warnings.</li><li>The issue hit multi-monitor systems with different scaling settings across supported Windows releases.</li><li>RDP files remain a known phishing and credential theft vector in enterprise environments.</li><li>Broken dialogs can quietly reduce the effectiveness of otherwise solid security controls.</li><li>IT teams should test the patch quickly on real-world mixed-DPI workstation setups.</li><li>Remote access hardening now requires both policy discipline and user-interface reliability.</li></ul>
+<h2>Looking Ahead</h2>
+<p>Expect Microsoft to keep tightening the experience around remote administration, especially as attackers continue to blend social engineering with built-in Windows tools. Future updates will likely bring more policy controls, better telemetry and clearer trust signals around connection files. Enterprises should watch the next Patch Tuesday releases closely, because the company is balancing urgent hardening work against the risk of breaking long-established remote workflows.</p>
+    
+    <div class="faq-section"><h2>Frequently Asked Questions</h2>
+<details><summary>Which systems were affected?</summary><div class="faq-answer"><p>Microsoft said the rendering issue hit supported Windows 10, Windows 11 and Windows Server devices, especially multi-monitor setups using different display scaling settings.</p></div></details>
+<details><summary>Why do the new RDP warnings matter?</summary><div class="faq-answer"><p>They help users review publisher identity, destination details and local resource redirection before connecting, which is important because malicious RDP files are increasingly used in phishing campaigns.</p></div></details>
+<details><summary>Should businesses deploy the preview update?</summary><div class="faq-answer"><p>Most enterprises should test it promptly in staging because a broken warning dialog can reduce the practical value of the security feature, especially for help desks and remote administration teams.</p></div></details>
+<details><summary>Does this change Remote Desktop defaults?</summary><div class="faq-answer"><p>The broader April security changes still leave risky shared resources disabled by default; this update mainly fixes how the warning dialog is displayed.</p></div></details>
+</div>
+
+    
+    <div class="tags"><span class="tag">Microsoft Ecosystem</span><span class="tag">Windows</span><span class="tag">Remote Desktop</span><span class="tag">Cybersecurity</span><span class="tag">Windows Server</span></div>
+    
+    <div class="author-box">
+      <div class="author-avatar">OW</div>
+      <div class="author-info">
+        <div class="author-name">OfficeandWin Tech Desk</div>
+        <div class="author-bio">Covering enterprise software, AI, cybersecurity, and productivity technology. Independent analysis for IT professionals and technology enthusiasts.</div>
+      </div>
+    </div>
+    
+    <div class="related-articles"><h3>📰 Related Articles</h3><div class="related-list">
+<a href="https://officeandwin.store/news/2026/05/01/apple-q2-earnings-podcast-recap-keeps-focus-on-services-ai-and-device-cycle/">Apple Q2 Earnings Keep Focus on Services, AI Pressure and the Device Cycle</a>
+<a href="https://officeandwin.store/news/2026/05/01/big-tech-ai-spending-surges-as-memory-chip-costs-hit-microsoft-budget/">Big Tech AI Spending Surges as Memory Costs Hit Microsoft’s Budget</a>
+<a href="https://officeandwin.store/news/2026/05/01/google-cosmo-android-ai-assistant-expands-mobile-ai-race/">Google COSMO Expands the Mobile AI Assistant Race on Android</a>
+<a href="https://officeandwin.store/news/2026/05/01/microsoft-aws-and-nvidia-defense-ai-partnerships-signal-trusted-cloud-convergence/">Microsoft, AWS and Nvidia Defense AI Partnerships Signal Trusted Cloud Convergence</a>
+<a href="https://officeandwin.store/news/2026/05/01/microsoft-expands-windows-11-store-app-removal-controls-for-admins/">Microsoft Expands Windows 11 App Removal Controls for Enterprise Admins</a>
+</div></div>
+
+  </article>
+</div>
+
+<footer>
+  <p><a href="https://officeandwin.store/news/">Tech News</a> | <a href="https://officeandwin.com">OfficeandWin Store</a> | <a href="mailto:support@officeandwin.com">Contact</a></p>
+  <p style="margin-top:12px;font-size:0.75rem;color:#5a6d85;">&copy; 2026 OfficeandWin Tech. All rights reserved.</p>
+</footer>
+</body>
+</html>
